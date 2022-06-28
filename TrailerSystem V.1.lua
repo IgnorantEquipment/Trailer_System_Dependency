@@ -1,5 +1,5 @@
 --[[
-	IgnorantStance's TrailerSystem Plugin V.1
+	Ignorant's TrailerSystem Plugin V.1
 
 ]]
 
