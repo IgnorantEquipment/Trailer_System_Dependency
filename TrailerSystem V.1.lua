@@ -138,6 +138,7 @@ end
 while wait() do
 	if not RunService:IsEdit() then
 	print("Running")
+		print(Selection:Get()[1])
 		if Selection:Get()[1] ~= nil then
 		print(Selection:Get()[1])
 			if table.find(Trailers,Selection:Get()[1]) then
