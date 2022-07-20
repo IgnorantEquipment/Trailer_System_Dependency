@@ -141,7 +141,7 @@ while wait() do
 		print("Running")
 		
 		game:GetService("Selection").SelectionChanged:Connect(function()
-			print(game:GetService("Selection"):Get()[1])
+			print(game:GetService("Selection"):Get()[1] .. "144")
 		end)
 		
 		if Selection:Get()[1] ~= nil then
