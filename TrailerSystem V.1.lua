@@ -141,7 +141,9 @@ while wait() do
 		
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
+		print(player)
 		local mouse = Player:GetMouse()
+		
 		if mouse.Target ~= nil then
 			print(mouse.Target)
 		end
