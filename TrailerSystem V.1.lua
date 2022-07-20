@@ -6,7 +6,7 @@
 -- Services
 local RunService = game:GetService("RunService")
 local CoreGui = game:GetService("CoreGui")
-local Selection = game:GetService("Selection")
+Selection = nil
 
 -- Variables
 local bTarget = nil;
