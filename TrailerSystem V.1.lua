@@ -135,22 +135,15 @@ function rethinkSelection()
 	end
 end
 
-game:GetService("Selection").SelectionChanged:Connect(function()
-	print(game:GetService("Selection"):Get()[1])
-end)
 
 while wait() do
 	if not RunService:IsEdit() then
 		print("Running")
 		
-		local Players = game:GetService("Players")
-		local player = Players.LocalPlayer
-		print(player)
-		local mouse = Player:GetMouse()
+		game:GetService("Selection").SelectionChanged:Connect(function()
+			print(game:GetService("Selection"):Get()[1])
+		end)
 		
-		if mouse.Target ~= nil then
-			print(mouse.Target)
-		end
 		if Selection:Get()[1] ~= nil then
 			print(Selection:Get()[1])
 			if table.find(Trailers,Selection:Get()[1]) then
