@@ -135,6 +135,10 @@ function rethinkSelection()
 	end
 end
 
+game:GetService("Selection").SelectionChanged:Connect(function()
+	print(game:GetService("Selection"):Get()[1])
+end)
+
 while wait() do
 	if not RunService:IsEdit() then
 		print("Running")
