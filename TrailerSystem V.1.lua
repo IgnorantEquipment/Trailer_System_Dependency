@@ -142,9 +142,11 @@ while wait() do
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
 		local mouse = Player:GetMouse()
-		print(mouse.Target)
+		if mouse.Target ~= nil then
+			print(mouse.Target)
+		end
 		if Selection:Get()[1] ~= nil then
-		print(Selection:Get()[1])
+			print(Selection:Get()[1])
 			if table.find(Trailers,Selection:Get()[1]) then
 				rethinkSelection()
 			end
